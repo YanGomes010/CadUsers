@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Users</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./logo.png" alt="" id="logo">
+            <button onclick="changeSignUpScreen()" id="signUpButton"><img id="signUpImage" src="./adicionar-usuario.png"
+                    alt="">Sign Up Users</button>
+        </header>
+
+        <section id="signUpScreenUsers">
+            <img src="./fechar.png" onclick="changeSignUpScreen()" id="closeSignUpScreen" alt="">
+            <form autocomplete="off">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome">
+
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF">
+
+                <label for="date">Data de nascimento:</label>
+                <input type="date" name="date" id="date" placeholder="Data de nascimento">
+
+                <article class="format">
+                    <span>Sexo:</span>
+                    <div>
+                        <label for="sex">
+                            <input type="radio" data-value="F" name="sex" value="F" id="Woman"><span>Feminino</span>
+                        </label>
+                        <label for="sex">
+                            <input type="radio" data-value="M" name="sex" value="M" id="Men"><span>Masculino</span>
+                        </label>
+                    </div>
+                </article>
+
+                <input type="submit" id="buttonSubmit" value="CADASTRAR">
+            </form>
+
+        </section>
+        <main>
+            <table id="table">
+                
+            </table>
+        </main>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
